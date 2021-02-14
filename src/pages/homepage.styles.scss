@@ -1,0 +1,32 @@
+.header {
+  height: 20vh;
+  background-color: white;
+  width: 100%;
+}
+.banner {
+
+  background-color: black;
+  width: 100vw;
+  height: 80vh;
+  display: block;
+
+  &__content {
+    position: relative;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+
+    &--bg {
+      position: absolute;
+      margin: 0 auto;
+      width: 100%;
+      height: 80vh;
+    }
+
+    &--image {
+    }
+    &--desc {
+    }
+  }
+}
