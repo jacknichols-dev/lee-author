@@ -1,0 +1,50 @@
+
+.banner {
+
+    background-color: black;
+    width: 100vw;
+    height: 85.5vh;
+    display: block;
+  
+    &__content {
+      position: relative;
+      display: grid;
+      margin: auto;
+      width: 80%;
+      height: 100%;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+  
+      &--bg {
+        margin: 0 auto;
+        width: 80%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+      }
+  
+      &--image {
+        margin: 0 auto;
+      }
+  
+      &--desc {
+        width: 85%;
+      }
+    }
+  }
+  
+  p, h1, h3 {
+    color: white;
+  }
+  
+  .btn {
+    padding: 1rem 4rem;
+    margin: 2rem 0;
+    background-color: #0095E0;
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+  }
