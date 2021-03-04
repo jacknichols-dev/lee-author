@@ -1,7 +1,5 @@
 .header {
-
     width: 100%;
-
 
     &__main {
       background-color: white;
@@ -9,6 +7,22 @@
       align-items: center;
       height: 11vh;
       justify-content: space-between;
+      color: #0D1D2B;
+
+      &--social-container {
+        display: flex;
+        align-items: center;
+      }
+
+      &--social-items {
+        padding: 0 1.5rem;
+        color: #0095E0;
+      }
+
+      &--social-item {
+        padding: 1.5rem;
+        color: #0095E0;
+      }
     }
 
     &__nav {

@@ -1,0 +1,14 @@
+.homepage {
+
+    &__hero {
+        display: flex;
+        overflow: hidden;
+    }
+
+    &__latest-releases {
+        height: 71rem;
+        display: flex;
+        align-items: center;
+        background-color: #EAF0F0;;
+    }
+}
