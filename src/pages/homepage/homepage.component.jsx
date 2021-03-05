@@ -3,6 +3,7 @@ import "./homepage.styles.scss";
 
 import HeroCarousel from '../../components/hero-carousel/hero-carousel.comp';
 import LatestReleases from "../../components/latest-releases/latest-releases.comp";
+import Testimonials from "../../components/testimonials/testimonials.comp";
 
 
 const HomePage = () => {
@@ -16,7 +17,9 @@ const HomePage = () => {
         <LatestReleases />
       </div>
 
-      <div className="testimonials"></div>
+      <div className="homepage__testimonials">
+        <Testimonials />
+      </div>
       <div className="footer"></div>
 
     </div>

@@ -1,3 +1,4 @@
+@import 'variables.scss';
 .header {
     width: 100%;
 
@@ -7,7 +8,7 @@
       align-items: center;
       height: 11vh;
       justify-content: space-between;
-      color: #0D1D2B;
+      color: $sec;
 
       &--social-container {
         display: flex;
@@ -16,17 +17,18 @@
 
       &--social-items {
         padding: 0 1.5rem;
-        color: #0095E0;
+        color: $pri;
       }
 
       &--social-item {
         padding: 1.5rem;
-        color: #0095E0;
+        color: $pri;
+        font-size: 2rem;
       }
     }
 
     &__nav {
-      background-color: #EAF0F0;
+      background-color: $light;
       display: flex;
       justify-content: center;
 
@@ -36,11 +38,11 @@
         justify-content: center;
         height: 100%;
         width: 10rem;
-        color: #0D1D2B;
+        color: $ter;
 
         &:hover {
           color: white;
-          background-color: #0095E0;
+          background-color: $pri;
           font-weight: bold;
           transition: all .3s ease-in-out;
         }

@@ -4,6 +4,7 @@ import AboutPage from './pages/aboutpage/about.comp';
 import { Switch, Route } from 'react-router-dom';
 import Header from './components/header/header.comp';
 import BookPage from './pages/bookspage/bookspage.comp';
+import Footer from "./components/footer/footer.comp";
 
 const App = () => {
 
@@ -15,6 +16,9 @@ const App = () => {
         <Route path="/about" component={AboutPage} />
         <Route path="/books" component={BookPage} />
       </Switch>
+      <div className="footer-section">
+        <Footer />
+      </div>
     </div>
   );
 }

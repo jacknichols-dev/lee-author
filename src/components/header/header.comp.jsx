@@ -16,15 +16,15 @@ const header = () => {
                     <div className="header__main--social-container">
                         <p>Follow me on</p>
                         <div className="header__main--social-items">
-                            <a href="https://www.facebook.com/" className="header__main--social-item">
+                            <a target="_blank" href="https://www.facebook.com/" className="header__main--social-item">
                                 <FaIcons.FaFacebookF />
                             </a>
-                            <Link to="#" className="header__main--social-item">
+                            <a target="_blank" href="https://www.facebook.com/" className="header__main--social-item">
                                 <FaIcons.FaTwitter />
-                            </Link>
-                            <Link to="#" className="header__main--social-item">
+                            </a>
+                            <a target="_blank" href="https://www.facebook.com/" className="header__main--social-item">
                                 <FaIcons.FaLinkedinIn />
-                            </Link>
+                            </a>
                         </div>
                     </div>
                 </div>

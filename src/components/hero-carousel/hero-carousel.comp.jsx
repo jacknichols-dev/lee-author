@@ -17,12 +17,12 @@ const HeroCarousel = () => {
                                 <img src={slide.image} alt={slide.title} className="banner__content--image" />
                                 <div className="banner__content--desc">
                                     <h1>{slide.title}</h1>
-                                    <h3>{slide.author}</h3>
+                                    <h4>{slide.author}</h4>
                                     <br />
                                     <p>
                                         {slide.synopsis}
                                     </p>
-                                    <Button />
+                                    <Button>READ MORE</Button>
                                 </div>
                             </div>
                         </div>

@@ -1,0 +1,45 @@
+@import 'variables.scss';
+
+.footer {
+
+    &__content {
+        
+        &--container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 10rem;
+            padding: 10rem;
+        }
+
+        & h1 {
+            margin: 5rem 0;
+        }
+
+
+
+        &--subscribe {
+
+            
+        }
+        &--sub-box {
+            background-color: white;
+            color: $ter;
+            padding: 2.5rem 2.5rem 1.5rem 2.5rem;
+
+            & input {
+                width: 100%;
+                padding: 1rem;
+                outline: none;
+                border: none;
+                background-color: $light;
+                margin-top: 1.5rem;
+                font-family: $f2;
+                font-size: 1.8rem;
+            }
+        }
+        &--subscribe {
+
+
+        }
+    }
+}

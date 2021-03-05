@@ -22,23 +22,23 @@ const LatestReleases = () => {
             <div className="latest__items-container">
                 <div className="latest__item-container">
                     <img src={mrLucky} alt="Mr. Lucky" />
-                    <Button />
+                    <Button>READ MORE</Button>
                 </div>
                 <div className="latest__item-container">
                     <img src={LuckyBreak} alt="Lucky Break" />
-                    <Button />
+                    <Button>READ MORE</Button>
                 </div>
                 <div className="latest__item-container">
                     <img src={DeadLucky} alt="Dead Lucky" />
-                    <Button />
+                    <Button>READ MORE</Button>
                 </div>
                 <div className="latest__item-container">
                     <img src={LuckyStars} alt="Lucky Stars" />
-                    <Button />
+                    <Button>READ MORE</Button>
                 </div>
                 <div className="latest__item-container">
                     <img src={Boxset} alt="Box set" />
-                    <Button />
+                    <Button>READ MORE</Button>
                 </div>
             </div>
 

@@ -1,10 +1,11 @@
+@import 'variables.scss';
 .latest {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
 
     &__left-container h1, h2 {
-        color: #0095E0;
+        color: $pri;
         padding: 4rem 0;
     }
 

@@ -1,4 +1,11 @@
+@import './styles/variables.scss';
+
 .container {
   max-width: 85vw;
   margin: 0 auto;
+}
+
+.footer-section {
+  background-color: $sec;
+  color: white;
 }

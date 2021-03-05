@@ -1,7 +1,9 @@
+@import 'variables.scss';
+
 .button {
     padding: 1rem 4rem;
     margin: 2rem 0;
-    background-color: #0095E0;
+    background-color: $pri;
     outline: none;
     border: none;
     border-radius: 5rem;
@@ -10,4 +12,5 @@
     font-size: 2rem;
     position: relative;
     display: flex;
+    cursor: pointer;
 }
