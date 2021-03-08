@@ -11,7 +11,7 @@ const header = () => {
             <div className="header container">
                 <div className="header__main">
                     <Link to="/">
-                        <img src={Logo} alt="logo" />
+                        <img src={Logo} alt="logo" height="50" />
                     </Link>
                     <div className="header__main--social-container">
                         <p>Follow me on</p>

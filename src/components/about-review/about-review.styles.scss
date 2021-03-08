@@ -1,0 +1,36 @@
+@import 'variables.scss';
+.about-rev {
+    height: 71rem;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+    &__img {
+        width: 15rem;
+        position: absolute;
+
+            &:last-of-type {
+                right: 0;
+                bottom: 10rem
+            }
+            &:first-of-type {
+                left: 0;
+                top: 10rem
+            }
+    }
+
+    &__quote, h4 {
+        text-align: center;
+        width: 50rem;
+        margin: 0 auto;
+
+    }
+            & h4 {
+                margin-top: 2rem;
+                color: $pri;
+                font-size: 2rem;
+            }
+}

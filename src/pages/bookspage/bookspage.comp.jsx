@@ -1,21 +1,16 @@
-import React, { Component } from 'react'
-import BOOK_DATA from '../../book.data';
+import React from 'react'
+import PageTitle from '../../components/page-title/page-title.comp';
+import ProductCards from '../../components/product-cards/product-cards.comp';
 
-export default class BooksPage extends Component {
-
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            books: BOOK_DATA
-        }
-    }
-
-    render() {
-        return (
-            <div className="container">
-                Books Page
-            </div>
-        )
-    }
+const BooksPage = () => {
+    return (
+        <div className="bookpage">
+            <PageTitle>BOOKS AVAILABLE</PageTitle>
+            <ProductCards />
+        </div>
+    )
 }
+
+export default BooksPage
+
+

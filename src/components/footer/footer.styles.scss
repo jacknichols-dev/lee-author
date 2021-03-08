@@ -8,19 +8,18 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             column-gap: 10rem;
-            padding: 10rem;
+            padding: 10rem 0;
         }
 
         & h1 {
             margin: 5rem 0;
         }
 
-
-
         &--subscribe {
 
             
         }
+
         &--sub-box {
             background-color: white;
             color: $ter;
@@ -35,11 +34,67 @@
                 margin-top: 1.5rem;
                 font-family: $f2;
                 font-size: 1.8rem;
+                border: 2px solid transparent ;
+                transition: all .2s ease-in-out;
+
+                &:focus {
+                    border: 2px solid black ;
+                }
             }
         }
-        &--subscribe {
 
+        &--contact {
+            display: flex;
+            flex-direction: column;
+        }
 
+        &--contact-container {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            & h4 a {
+                color: $pri;
+                font-family: $f1;
+            }
+        }
+
+        &--agent {
+            display: flex;
+            align-items: center;
+            padding: 1rem 0;
+
+            & p {
+                padding: 0 1rem;
+            }
+        }
+
+        &--author {
+            display: flex;
+            align-items: center;
+            padding: 1rem 0;
+
+            & p {
+                padding: 0 1rem;
+            }
+        }
+
+        &--navigate {
+            & ul {
+                color: $pri;
+                font-family: $f2;
+                list-style: none;
+                font-size: 3rem;
+            }
         }
     }
+
+    &__bottom {
+        background-color: $ter;
+        padding: 1.5rem 0;
+        text-align: left;
+    }
+
+   
 }

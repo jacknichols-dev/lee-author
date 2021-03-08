@@ -1,12 +1,16 @@
-import React from 'react'
+import React from 'react';
+import PageTitle from '../../components/page-title/page-title.comp';
+import AboutSection from '../../components/about-section/about-section.comp';
+import AboutReview from '../../components/about-review/about-review.comp';
 
 const About = () => {
 
     return (
-        <div className="container">
-            This is the About page!
-
-        </div>
+        <>
+            <PageTitle>ABOUT THE AUTHOR</PageTitle>
+            <AboutSection />
+            <AboutReview />
+        </>
     )
 }
 

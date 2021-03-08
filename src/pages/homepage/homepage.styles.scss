@@ -1,8 +1,7 @@
 .homepage {
-
+        overflow: hidden;
     &__hero {
         display: flex;
-        overflow: hidden;
     }
 
     &__latest-releases {
