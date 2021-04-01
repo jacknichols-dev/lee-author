@@ -1,0 +1,13 @@
+@import 'variables.scss';
+.about-me {
+    background: linear-gradient(to top left, $sec 2%, $ter);
+
+    &__content {
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+    &__img {
+        transform: translateY(6.5rem);
+    }
+}

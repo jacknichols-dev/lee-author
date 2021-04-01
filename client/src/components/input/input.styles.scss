@@ -1,0 +1,19 @@
+@import 'variables.scss';
+
+input {
+    width: 100%;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    background-color: $light;
+    margin-top: 1.5rem;
+    font-family: $f2;
+    font-size: 1.8rem;
+    border: 2px solid transparent ;
+    transition: all .2s ease-in-out;
+
+    &:focus {
+        border: 2px solid $pri ;
+        font-family: $f1;
+    }
+}

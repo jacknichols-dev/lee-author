@@ -1,0 +1,37 @@
+$pri: #0095E0;
+$sec: #2A425F;
+$ter: #0D1D2B;
+$light: #EAF0F0;
+
+$f1: 'Poppins', sans-serif;
+$f2: 'Bebas Neue', cursive;
+
+@keyframes ImageAnimation {
+    0% {
+        transform: scale(0.9);
+        opacity: .7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes ProductCardAnimation {
+    0% {
+        transform: translateY(1rem);
+        opacity: .5;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+@keyframes Popup {
+    0% {
+        opacity: 0;
+    }
+    100% {
+
+        opacity: 1;
+    }
+}
