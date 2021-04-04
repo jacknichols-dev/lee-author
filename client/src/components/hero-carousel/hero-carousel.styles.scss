@@ -22,7 +22,7 @@
       &--image {
         margin: 0 auto;
         width: 60%;
-        animation: ImageAnimation 1s 0s ease-in-out backwards;
+        animation: ImageAnimation 2s 0s ease-in-out backwards;
       }
   
       &--desc {
@@ -33,6 +33,7 @@
       &--desc h4 {
         color: $pri;
         font-family: $f1;
+        font-weight: ligher;
       }
     }
   }

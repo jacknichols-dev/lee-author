@@ -1,16 +1,15 @@
 @import 'variables.scss';
+
 .pup {
-    width: 50%;
-    padding: 6rem;
+    width: 100vw;
+    height: 100vh;
     text-align: center;
+    background-color: rgba(0,0,0,.25);
+    z-index: 500;
     position: fixed;
-    background-color: white;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1000;
-    animation: Popup .2s ease-in-out backwards 3s;
-    box-shadow: 0 2rem 5rem rgba(0,0,0,.2);
+    top: 0;
+    right: 0;
+
 
     &__exit {
         position: absolute;
@@ -31,6 +30,14 @@
 }
 
 .pup-container {
-    display: flex;
-    flex-direction: column;
+    animation: ProductCardAnimation 1s ease;
+    width: 50%;
+    padding: 6rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1000;
+    box-shadow: 0 2rem 5rem rgba(0,0,0,.2);
+    background-color: white;
+    position: fixed;
 }

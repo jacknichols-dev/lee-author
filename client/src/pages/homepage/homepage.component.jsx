@@ -4,14 +4,12 @@ import "./homepage.styles.scss";
 import HeroCarousel from '../../components/hero-carousel/hero-carousel.comp';
 import LatestReleases from "../../components/latest-releases/latest-releases.comp";
 import Testimonials from "../../components/testimonials/testimonials.comp";
-import PopUp from "../../components/pop-up/pop-up.comp";
 
 
 
 const HomePage = () => {
   return (
     <div className="homepage">
-      <PopUp />
       <div className="homepage__hero">
         <HeroCarousel />
       </div>

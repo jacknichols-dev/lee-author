@@ -13,7 +13,7 @@ import Button from '../button/button.comp';
 const LatestReleases = () => {
     return (
         <div className="latest container">
-            <ScrollAnimation animateIn="animate__fadeInLeft" duration="1">
+            <ScrollAnimation animateIn="animate__fadeInUp" duration="1" animateOnce >
                 <div className="latest__left-container">
                     <h1>LATEST RELEASES</h1>
                     <p className="latest__review">
@@ -23,31 +23,47 @@ const LatestReleases = () => {
                 </div>
             </ScrollAnimation>
 
-            <ScrollAnimation animateIn="fadeIn" duration="1" animateOut="fadeOut">
 
-                <div className="latest__items-container">
-                    <div className="latest__item-container">
+
+            <div className="latest__items-container">
+
+                <div className="latest__item-container">
+                    <ScrollAnimation animateIn="animate__fadeInUp" duration=".3" animateOnce >
+
                         <img src={mrLucky} alt="Mr. Lucky" />
-                        <Button>READ MORE</Button>
-                    </div>
-                    <div className="latest__item-container">
-                        <img src={LuckyBreak} alt="Lucky Break" />
-                        <Button>READ MORE</Button>
-                    </div>
-                    <div className="latest__item-container">
-                        <img src={DeadLucky} alt="Dead Lucky" />
-                        <Button>READ MORE</Button>
-                    </div>
-                    <div className="latest__item-container">
-                        <img src={LuckyStars} alt="Lucky Stars" />
-                        <Button>READ MORE</Button>
-                    </div>
-                    <div className="latest__item-container">
-                        <img src={Boxset} alt="Box set" />
-                        <Button>READ MORE</Button>
-                    </div>
+                        <Button link="/books/1">READ MORE</Button>
+                    </ScrollAnimation>
                 </div>
-            </ScrollAnimation>
+                <div className="latest__item-container">
+                    <ScrollAnimation animateIn="animate__fadeInUp" duration=".6" animateOnce >
+
+                        <img src={LuckyBreak} alt="Lucky Break" />
+                        <Button link="/books/2">READ MORE</Button>
+                    </ScrollAnimation>
+                </div>
+                <div className="latest__item-container">
+                    <ScrollAnimation animateIn="animate__fadeInUp" duration=".9" animateOnce >
+
+                        <img src={DeadLucky} alt="Dead Lucky" />
+                        <Button link="/books/3">READ MORE</Button>
+                    </ScrollAnimation>
+                </div>
+                <div className="latest__item-container">
+                    <ScrollAnimation animateIn="animate__fadeInUp" duration="1.2" animateOnce >
+
+                        <img src={LuckyStars} alt="Lucky Stars" />
+                        <Button link="/books/4">READ MORE</Button>
+                    </ScrollAnimation>
+                </div>
+                <div className="latest__item-container">
+                    <ScrollAnimation animateIn="animate__fadeInUp" duration="1.5" animateOnce >
+
+                        <img src={Boxset} alt="Box set" />
+                        <Button link="/books/5">READ MORE</Button>
+                    </ScrollAnimation>
+                </div>
+            </div>
+
 
         </div>
     )

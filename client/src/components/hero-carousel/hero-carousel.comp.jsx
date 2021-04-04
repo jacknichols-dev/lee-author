@@ -18,12 +18,12 @@ const HeroCarousel = () => {
                                     <img src={slide.image} alt={slide.title} className="banner__content--image" />
                                     <div className="banner__content--desc">
                                         <h1>{slide.title}</h1>
-                                        <h4>{slide.author}</h4>
+                                        <h4 style={{ fontWeight: 'lighter' }}>{slide.author}</h4>
                                         <br />
                                         <p>
                                             {slide.synopsis}
                                         </p>
-                                        <Button>READ MORE</Button>
+                                        <Button link="/books/1">READ MORE</Button>
                                     </div>
                                 </div>
                             </div>

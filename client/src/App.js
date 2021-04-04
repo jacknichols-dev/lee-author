@@ -1,27 +1,51 @@
+import { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { DataProvider } from './components/Data/DataProvider';
+
 import "./App.scss";
 import HomePage from "./pages/homepage/homepage.component";
 import AboutPage from './pages/aboutpage/about.comp';
-import { Switch, Route } from 'react-router-dom';
 import Header from './components/header/header.comp';
 import BookPage from './pages/bookspage/bookspage.comp';
 import Footer from "./components/footer/footer.comp";
 import ProductPage from "./pages/productpage/productpage.comp";
+import PopUp from './components/pop-up/pop-up.comp';
+import ScrollToTop from './components/ScrollToTop';
 
 const App = () => {
 
+
+
+  useEffect(() => {
+    setTimeout(() => {
+      setTimedPup(true)
+    }, 10000);
+  }, []);
+
+  const [timedPup, setTimedPup] = useState(false);
+
+  function scrollTop() {
+    window.scrollTo(0, 0);
+  }
+
   return (
-    <div>
-      <Header />
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route path="/about" component={AboutPage} />
-        <Route path="/books" component={BookPage} />
-        <Route path="/book" component={ProductPage} />
-      </Switch>
-      <div className="footer-section">
-        <Footer />
+    <DataProvider >
+      <div>
+        <Router>
+          <Header />
+          <Routes>
+            <Route path="/" element={<HomePage />} preload={scrollTop} />
+            <Route path="/about" element={<AboutPage />} preload={scrollTop} />
+            <Route path="/books" element={<BookPage />} preload={scrollTop} />
+            <Route path="/books/:id" element={<ProductPage />} preload={scrollTop} />
+          </Routes>
+          <PopUp trigger={timedPup} closePup={setTimedPup} />
+          <div className="footer-section">
+            <Footer />
+          </div>
+        </Router>
       </div>
-    </div>
+    </DataProvider>
   );
 }
 

@@ -10,3 +10,25 @@ const app = express();
 const mailchimp = new Mailchimp(mc_api_key);
 
 // API endpoint
+app.get("/api/memberAdd", (req, res) => {
+    mailchimp
+        .post(`/lists/${list_id}/members/`, {
+            email_address: req.query.email,
+            status: "subscribed"
+        })
+        .then(result => {
+            res.send(result);
+        })
+        .catch(err => {
+            res.send(error);
+        })
+});
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname + '/client/build/index.html'));
+})
+
+const port = process.env.PORT || 9002;
+app.listen(port);
+
+console.log(`Express listening on port ${port}`);

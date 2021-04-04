@@ -7,13 +7,14 @@ input {
     border: none;
     background-color: $light;
     margin-top: 1.5rem;
-    font-family: $f2;
+    font-family: $f1;
     font-size: 1.8rem;
     border: 2px solid transparent ;
     transition: all .2s ease-in-out;
+    border: 2px solid transparent ;
+
 
     &:focus {
         border: 2px solid $pri ;
-        font-family: $f1;
     }
 }

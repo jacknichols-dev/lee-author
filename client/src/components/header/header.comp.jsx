@@ -30,9 +30,9 @@ const header = () => {
                 </div>
             </div>
             <nav className="header__nav" style={{ textAlign: 'center', height: '3.5vh' }}>
-                <NavLink exact activeClassName="selected" className="header__nav--item" to="/">Home</NavLink>
-                <NavLink exact activeClassName="selected" className="header__nav--item" to="/about">About</NavLink>
-                <NavLink exact activeClassName="selected" className="header__nav--item" to="/books">Books</NavLink>
+                <NavLink activeClassName="selected" className="header__nav--item" to="/" end>Home</NavLink>
+                <NavLink activeClassName="selected" className="header__nav--item" to="/about">About</NavLink>
+                <NavLink activeClassName="selected" className="header__nav--item" to="/books" end>Books</NavLink>
             </nav>
 
 
