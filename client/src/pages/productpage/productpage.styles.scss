@@ -17,7 +17,6 @@
                 background-size: cover;
                 background-position: center;
                 margin: 0 auto;
-                border: 2px $pri solid;
             }
     }
 
@@ -42,17 +41,17 @@
         }
 
         &--info-container {
-            border: 1px solid $ter;
-            padding: 3rem 0;
+            border: 1px solid crimson;
+            margin: 3rem 0;
             align-items: center;
             display: grid;
             grid-template-columns: 2fr 1fr;
             justify-content: space-between;
         }
         &--info  {
-            border-right: 1px solid $ter;
+            border-right: 1px solid crimson;
             text-align: left;
-            padding-left: 3rem;
+            padding: 3rem;
         }
                 &--info span {
                     color: $pri;
@@ -62,9 +61,30 @@
         &--price {
             color: crimson;
         }
+
+        &--availability {
+            margin: 3rem 0;
+        }
+
+        &--items-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 3rem 0;
+        }
+
+        &--item {
+            color: $pri;
+            display: flex;
+            align-items: center;
+
+            & img {
+                padding-right: 1rem;
+            }
+        }
     }
 }
 
 .btn-center {
-    display: inline;
+    display: inline-flex;
 }

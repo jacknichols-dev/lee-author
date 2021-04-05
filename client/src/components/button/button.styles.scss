@@ -11,7 +11,9 @@
     font-family: 'Bebas Neue', cursive;
     font-size: 2rem;
     position: relative;
-    display: flex;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
     cursor: pointer;
 
     &:hover {
@@ -21,5 +23,5 @@
 }
 
 .btn-center {
-    display: inline;
+    display: inline-flex;
 }

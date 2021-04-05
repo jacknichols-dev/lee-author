@@ -37,7 +37,7 @@ const App = () => {
             <Route path="/" element={<HomePage />} preload={scrollTop} />
             <Route path="/about" element={<AboutPage />} preload={scrollTop} />
             <Route path="/books" element={<BookPage />} preload={scrollTop} />
-            <Route path="/books/:id" element={<ProductPage />} preload={scrollTop} />
+            <Route path="/books/:title" element={<ProductPage />} preload={scrollTop} />
           </Routes>
           <PopUp trigger={timedPup} closePup={setTimedPup} />
           <div className="footer-section">

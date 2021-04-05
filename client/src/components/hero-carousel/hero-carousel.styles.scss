@@ -1,7 +1,15 @@
 @import 'variables.scss';
+.banner-container {
+  display: flex;
+  overflow: hidden;
+ 
+}
 .banner {
     background-color: black;
     height: 85.5vh;
+    display: flex;
+    min-width: 100vw;
+    transition: all .3s ease-in-out;
   
     &__content {
       display: grid;
@@ -36,4 +44,33 @@
         font-weight: ligher;
       }
     }
+
+    &__btn {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      color: white;
+      border: none;
+      width: 10rem;
+      font-size: 3rem;
+      outline: none;
+      cursor: pointer;
+      height: 100%;
+
+      &:hover {
+       background: linear-gradient(to top, rgba(255, 255, 255, 0.219) -48%, transparent 63%);
+      }
+    }
+  }
+
+  .left {
+    left: 0;
+  }
+
+  .right {
+    right: 0;
   }

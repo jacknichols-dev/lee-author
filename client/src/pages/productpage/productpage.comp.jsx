@@ -3,16 +3,17 @@ import PageTitle from '../../components/page-title/page-title.comp';
 import { useParams } from 'react-router-dom';
 import { DataContext } from '../../components/Data/DataProvider';
 import Button from '../../components/button/button.comp';
+import * as FaIcons from 'react-icons/fa';
 
 import './productpage.styles.scss';
 
 export default function ProductPage() {
 
-    const { id } = useParams();
+    const { title } = useParams();
     const [books, setBooks] = useContext(DataContext)
 
     const details = books.filter((book, index) => {
-        return book.id == id
+        return book.title == title
     })
 
     return (
@@ -30,8 +31,8 @@ export default function ProductPage() {
 
                                 <div className="book__desc">
                                     <h1 className="book__desc--title">{book.title}</h1>
-                                    <h3 className="book__desc--author">{book.author}</h3>
-                                    <h3 style={{ color: '#0095E0' }}>Synopsis</h3>
+                                    <p className="book__desc--author">{book.author}</p>
+                                    <p style={{ color: '#0095E0', paddingBottom: '1rem' }}>Synopsis</p>
                                     <p className="book__desc--synopsis">{book.synopsis}</p>
 
                                     <div className="book__desc--info-container">
@@ -44,7 +45,23 @@ export default function ProductPage() {
                                             <h1>£{book.price}</h1>
                                         </div>
                                     </div>
-                                    <Button className="btn-center" link="https://www.amazon.co.uk/Mr-Lucky-Trentbridge-Tales-Book/dp/1871407397/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=" target="_blank" >Amazon page</Button>
+                                    <div className="book__desc--availability">
+                                        Available in:
+                                        <div className="book__desc--items-container">
+                                            {
+                                                book.availability.map((item, index) => (
+                                                    <div className="book__desc--item" key={index} >
+                                                        <img src={item.img} alt="" width="50" />
+                                                        {item.title}
+                                                    </div>
+                                                ))
+                                            }
+                                        </div>
+
+                                    </div>
+                                    <Button className="btn-center" link={
+                                        book.link
+                                    } target="_blank" >Amazon page <FaIcons.FaAmazon size="30" /></Button>
                                 </div>
                             </div>
                         ))

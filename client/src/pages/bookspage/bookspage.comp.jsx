@@ -15,7 +15,7 @@ export default function BooksPage() {
             <section className="cards container">
                 {
                     books.map(book => (
-                        <Link to={`/books/${book.id}`} key={book.id} >
+                        <Link to={`/books/${book.title}`} key={book.id} >
                             <ScrollAnimation animateIn="animate__fadeIn" duration="1" animateOnce >
                                 <div className="card" key={book.id}>
                                     <div className="card__image" style={{ backgroundImage: `url(${book.image})` }} />

@@ -14,7 +14,9 @@ const header = () => {
                         <img src={Logo} alt="logo" height="50" />
                     </Link>
                     <div className="header__main--social-container">
+
                         <p>Follow me on</p>
+
                         <div className="header__main--social-items">
                             <a target="_blank" href="https://www.facebook.com/" className="header__main--social-item">
                                 <FaIcons.FaFacebookF />
