@@ -14,7 +14,7 @@ const AboutReview = () => {
                     contemporary social issues including drugs, prostitution, corruption, homelessness and the plight
                     of the working class.”
                  </p>
-                <h4>- Wayne Rooney</h4>
+                <h4>- Mr. Champ</h4>
                 <img src={Quote} alt="quotation mark" className="about-rev__img 2" />
             </div>
         </div>

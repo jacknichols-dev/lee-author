@@ -1,7 +1,7 @@
 @import 'variables.scss';
 .latest {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     align-items: center;
 
     &__left-container h1, h2 {
@@ -15,11 +15,13 @@
     }
 
     &__items-container {
+        overflow: hidden;
         background-color: white;
         height: 50rem;
         display: flex;
         align-items: center;
         padding: 0 5rem;
+        justify-content: space-around;
 
         & img {
             height: 25rem;

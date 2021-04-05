@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './hero-carousel.styles.scss';
-
 import SLIDE_DATA from './slide-data';
 import Button from '../button/button.comp';
 import * as RiIcons from 'react-icons/ri';

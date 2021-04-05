@@ -8,7 +8,7 @@ const PopUp = (props) => {
         <div className="pup">
             <div className="pup-container">
                 <div className="pup__exit" onClick={() => props.closePup(false)}><strong>X</strong></div>
-                <h1 className="pup__title">Subscribe to My Newsletter</h1>
+                <h1 className="pup__title">Join My Newsletter</h1>
                 <p className="pup__prg">
                     I publish a newsletter once a month with behind the scenes info,
                     updates and details of special offers and new releases.
