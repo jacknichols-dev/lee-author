@@ -3,6 +3,9 @@ $pri: #0095E0;
 $sec: #2A425F;
 $ter: #0D1D2B;
 $light: #EAF0F0;
+$red: #a50808;
+
+$dark: #302d2d;
 
 //fonts
 
@@ -10,8 +13,6 @@ $f1: 'Poppins', sans-serif;
 $f2: 'Bebas Neue', cursive;
 
 //mixins
-
-// breakpoints
 
 // animations
 
@@ -35,10 +36,52 @@ $f2: 'Bebas Neue', cursive;
 }
 @keyframes Popup {
     0% {
-        opacity: 0;
+        opacity: 0.5;
     }
     100% {
 
         opacity: 1;
     }
 }
+
+@keyframes bannerZoom {
+    0% {
+        transform: scale(.2);
+
+    }
+    100% {
+        transform: scale(1);
+
+    }
+}
+
+// breakpoints
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+      @media only screen and (max-width: 30em) {
+        @content; //320px - 480px
+      }
+    }
+    @if $breakpoint == tab-port {
+      @media only screen and (max-width: 48em) {
+        @content; //768px - 1024px
+      }
+    }
+    @if $breakpoint == tab-land {
+      @media only screen and (max-width: 64em) {
+        @content; //768px - 1024px
+      }
+    }
+    @if $breakpoint == laptop {
+      @media only screen and (max-width: 90em) {
+        @content; //1224px
+      }
+    }
+    @if $breakpoint == desktop {
+      @media only screen and (max-width: 114em) {
+        @content; //1824px
+      }
+    }
+  }
+  

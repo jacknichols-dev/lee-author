@@ -2,12 +2,13 @@ import React from 'react';
 import './pop-up.styles.scss';
 import Input from '../input/input.comp';
 import Button from '../button/button.comp';
+import * as AiIcons from 'react-icons/ai';
 
 const PopUp = (props) => {
     return (props.trigger) ? (
         <div className="pup">
             <div className="pup-container">
-                <div className="pup__exit" onClick={() => props.closePup(false)}><strong>X</strong></div>
+                <div className="pup__exit" onClick={() => props.closePup(false)}><AiIcons.AiOutlineCloseCircle size="30" /></div>
                 <h1 className="pup__title">Join My Newsletter</h1>
                 <p className="pup__prg">
                     I publish a newsletter once a month with behind the scenes info,

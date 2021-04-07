@@ -28,6 +28,7 @@ const HeroCarousel = () => {
                     sliderArr.map((slide, index) => {
                         return (
                             <div className="banner" key={index} style={{ transform: `translateX(${x}%` }}>
+
                                 <div style={{ backgroundImage: `url(${slide.bgImage})` }} className="banner__content--bg">
                                     <div className="banner__content container">
                                         <img src={slide.image} alt={slide.title} className="banner__content--image" />
@@ -38,7 +39,7 @@ const HeroCarousel = () => {
                                             <p>
                                                 {slide.synopsis}
                                             </p>
-                                            <Button link={`/books/${slide.title}`}>READ MORE</Button>
+                                            <Button link={`/books/${slide.title}`}>Read more</Button>
                                         </div>
                                     </div>
                                 </div>

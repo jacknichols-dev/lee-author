@@ -28,35 +28,35 @@ const LatestReleases = () => {
             <div className="latest__items-container">
 
                 <div className="latest__item-container">
-                    <ScrollAnimation animateIn="animate__fadeInUp" duration=".3" animateOnce >
+                    <ScrollAnimation animateIn="animate__fadeInUp" duration=".2" animateOnce >
 
                         <img src={mrLucky} alt="Mr. Lucky" />
                         <Button link="/books/1">READ MORE</Button>
                     </ScrollAnimation>
                 </div>
                 <div className="latest__item-container">
-                    <ScrollAnimation animateIn="animate__fadeInUp" duration=".6" animateOnce >
+                    <ScrollAnimation animateIn="animate__fadeInUp" duration=".3" animateOnce >
 
                         <img src={LuckyBreak} alt="Lucky Break" />
                         <Button link="/books/2">READ MORE</Button>
                     </ScrollAnimation>
                 </div>
                 <div className="latest__item-container">
-                    <ScrollAnimation animateIn="animate__fadeInUp" duration=".9" animateOnce >
+                    <ScrollAnimation animateIn="animate__fadeInUp" duration=".4" animateOnce >
 
                         <img src={DeadLucky} alt="Dead Lucky" />
                         <Button link="/books/3">READ MORE</Button>
                     </ScrollAnimation>
                 </div>
                 <div className="latest__item-container">
-                    <ScrollAnimation animateIn="animate__fadeInUp" duration="1.2" animateOnce >
+                    <ScrollAnimation animateIn="animate__fadeInUp" duration=".5" animateOnce >
 
                         <img src={LuckyStars} alt="Lucky Stars" />
                         <Button link="/books/4">READ MORE</Button>
                     </ScrollAnimation>
                 </div>
                 <div className="latest__item-container">
-                    <ScrollAnimation animateIn="animate__fadeInUp" duration="1.5" animateOnce >
+                    <ScrollAnimation animateIn="animate__fadeInUp" duration=".6" animateOnce >
 
                         <img src={Boxset} alt="Box set" />
                         <Button link="/books/5">READ MORE</Button>

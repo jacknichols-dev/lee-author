@@ -18,7 +18,7 @@ const Footer = (props) => {
                                 <p>I publish a newsletter once a month with behind the scenes info, updates and details of special offers and new releases. If you would be happy to hear from me please pop your email address in the box</p>
                                 <form action="submit">
                                     <Input placeholder="Enter your email" />
-                                    <Button>SUBSCRIBE</Button>
+                                    <Button>Subscribe</Button>
                                 </form>
                             </div>
                         </div>

@@ -24,7 +24,7 @@ export default function BooksPage() {
                                             <h2 className="card__footer--top-title">{book.title}</h2>
                                             <h2 style={{ color: 'crimson' }}>£{book.price}</h2>
                                         </div>
-                                        <p>{book.author}</p>
+
                                         <br></br>
                                         {
                                             book.synopsis.split(' ').slice(0, 24).join(' ') + '...'

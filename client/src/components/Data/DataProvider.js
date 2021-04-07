@@ -9,9 +9,9 @@ export const DataProvider = (props) => {
     const [books, setBooks] = useState([
         {
             id: 1,
-            image: '/images/mr-lucky@2x.jpg',
+            image: '/images/lee-book-mrLucky.jpg',
             title: 'Mr. Lucky',
-            price: 6.99,
+            price: 7.99,
             author: 'Lee Wood',
             language: 'English',
             publicationDate: '5 April 2017',
@@ -38,9 +38,9 @@ export const DataProvider = (props) => {
         },
         {
             id: 2,
-            image: '/images/lucky-break@2x.jpg',
+            image: '/images/lee-book-luckyBreak.jpg',
             title: 'Lucky Break',
-            price: 6.99,
+            price: 7.99,
             author: 'Lee Wood',
             language: 'English',
             publicationDate: '18 May 2018',
@@ -64,9 +64,9 @@ export const DataProvider = (props) => {
         },
         {
             id: 3,
-            image: '/images/dead-lucky@2x.jpg',
+            image: '/images/lee-book-deadLucky.jpg',
             title: 'Dead Lucky',
-            price: 6.99,
+            price: 7.99,
             author: 'Lee Wood',
             language: 'English',
             publicationDate: '21 Nov. 2018',
@@ -85,16 +85,12 @@ export const DataProvider = (props) => {
                     img: '/images/paperback-icon.png',
                     title: "Paperback"
                 },
-                {
-                    img: '/images/audible-icon.png',
-                    title: "Audible book"
-                },
             ],
             link: 'https://www.amazon.co.uk/gp/product/B07KS1HYK5/ref=dbs_a_def_rwt_bibl_vppi_i5'
         },
         {
             id: 4,
-            image: '/images/lucky-stars@2x.jpg',
+            image: '/images/lee-book-luckyStars.jpg',
             title: 'Lucky Stars',
             price: 6.99,
             author: 'Lee Wood',
@@ -122,14 +118,14 @@ export const DataProvider = (props) => {
         },
         {
             id: 5,
-            image: '/images/box-set@2x.jpg',
+            image: '/images/lee-book-boxSet.jpg',
             title: 'Lucky Series',
             price: 12.99,
             author: 'Lee Wood',
             language: 'English',
             publicationDate: '21 Nov. 2018',
             printLength: 220,
-            synopsis: `It sells for $5.4 million at Sotheby's. Now he keeps finding valuable items, which doesn't go unnoticed by his competitors.Three of them become curious about his secret source and decide to follow him with disastrous consequences.`,
+            synopsis: `It sells for $5.4 million at Sotheby's. Now he keeps finding valuable items, which doesn't go unnoticed by his competitors. Three of them become curious about his secret source and decide to follow him with disastrous consequences.`,
             availability: [
                 {
                     img: '/images/kindle-icon.png',

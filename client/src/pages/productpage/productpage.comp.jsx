@@ -27,13 +27,14 @@ export default function ProductPage() {
 
                                 <div className="book__left">
                                     <div className="book__left--img" style={{ backgroundImage: `url(${book.image})` }} />
+                                    <br style={{ borderTop: '1px solid black' }} />
+                                    <h3>Synopsis</h3>
+                                    <p className="book__left--synopsis">{book.synopsis}</p>
                                 </div>
 
                                 <div className="book__desc">
                                     <h1 className="book__desc--title">{book.title}</h1>
-                                    <p className="book__desc--author">{book.author}</p>
-                                    <p style={{ color: '#0095E0', paddingBottom: '1rem' }}>Synopsis</p>
-                                    <p className="book__desc--synopsis">{book.synopsis}</p>
+
 
                                     <div className="book__desc--info-container">
                                         <div className="book__desc--info">
@@ -42,9 +43,15 @@ export default function ProductPage() {
                                             <p>Language: <span>{book.language}</span></p>
                                         </div>
                                         <div className="book__desc--price">
+                                            <p>Paperback</p>
                                             <h1>£{book.price}</h1>
                                         </div>
                                     </div>
+
+                                    <Button className="btn-center" link={
+                                        book.link
+                                    } target="_blank" >Buy at Amazon<FaIcons.FaAmazon size="30" style={{ marginLeft: '1.5rem' }} /></Button>
+
                                     <div className="book__desc--availability">
                                         Available in:
                                         <div className="book__desc--items-container">
@@ -59,9 +66,7 @@ export default function ProductPage() {
                                         </div>
 
                                     </div>
-                                    <Button className="btn-center" link={
-                                        book.link
-                                    } target="_blank" >Amazon page <FaIcons.FaAmazon size="30" /></Button>
+
                                 </div>
                             </div>
                         ))
