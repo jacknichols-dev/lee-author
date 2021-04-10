@@ -42,13 +42,19 @@ const HeroCarousel = () => {
                                             <Button link={`/books/${slide.title}`}>Read more</Button>
                                         </div>
                                     </div>
+
+
+
+
                                 </div>
-                                <button className="banner__btn left" onClick={goLeft}><RiIcons.RiArrowLeftCircleLine /></button>
-                                <button className="banner__btn right" onClick={goRight}><RiIcons.RiArrowRightCircleLine /></button>
                             </div>
                         )
                     })
                 }
+                < button className="banner__btn left" onClick={goLeft}><RiIcons.RiArrowLeftCircleLine /></button>
+                <button className="banner__btn right" onClick={goRight}><RiIcons.RiArrowRightCircleLine /></button>
+
+
             </div>
 
         </>
