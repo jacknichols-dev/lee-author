@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/lee-author/static/css/main.20e84630.chunk.css",
+    "main.css": "/lee-author/static/css/main.88beddd6.chunk.css",
     "main.js": "/lee-author/static/js/main.d33a5500.chunk.js",
     "main.js.map": "/lee-author/static/js/main.d33a5500.chunk.js.map",
     "runtime-main.js": "/lee-author/static/js/runtime-main.4aa8a880.js",
@@ -12,7 +12,7 @@
     "static/js/3.458b61ca.chunk.js.map": "/lee-author/static/js/3.458b61ca.chunk.js.map",
     "index.html": "/lee-author/index.html",
     "static/css/2.cc77c331.chunk.css.map": "/lee-author/static/css/2.cc77c331.chunk.css.map",
-    "static/css/main.20e84630.chunk.css.map": "/lee-author/static/css/main.20e84630.chunk.css.map",
+    "static/css/main.88beddd6.chunk.css.map": "/lee-author/static/css/main.88beddd6.chunk.css.map",
     "static/js/2.23bd0698.chunk.js.LICENSE.txt": "/lee-author/static/js/2.23bd0698.chunk.js.LICENSE.txt",
     "static/media/box-set@2x.e6c714e5.png": "/lee-author/static/media/box-set@2x.e6c714e5.png",
     "static/media/dead-lucky-book@2x.f096bda9.png": "/lee-author/static/media/dead-lucky-book@2x.f096bda9.png",
@@ -27,7 +27,7 @@
     "static/js/runtime-main.4aa8a880.js",
     "static/css/2.cc77c331.chunk.css",
     "static/js/2.23bd0698.chunk.js",
-    "static/css/main.20e84630.chunk.css",
+    "static/css/main.88beddd6.chunk.css",
     "static/js/main.d33a5500.chunk.js"
   ]
 }
