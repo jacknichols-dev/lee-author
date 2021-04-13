@@ -1,11 +1,14 @@
+@import 'variables.scss';
+
 .homepage {
         
     &__hero {
         display: flex;
+        position: relative;
     }
 
     &__latest-releases {
-        height: 71rem;
+        height: auto;
         display: flex;
         align-items: center;
         background-color: #EAF0F0;
@@ -13,5 +16,9 @@
 
     &__testimonials {
         padding: 10rem 0;
+
+        @include respond(tab-land) {
+            padding: 8rem 0;
+        }
     }
 }

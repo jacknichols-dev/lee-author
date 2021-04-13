@@ -12,9 +12,23 @@
       justify-content: space-between;
       color: $sec;
 
+      &--logo {
+        
+        @include respond(tab-land) {
+          width: 12rem;
+        }
+
+      }
+
       &--social-container {
         display: flex;
         align-items: center;
+
+        & p {
+          @include respond(tab-land) {
+            display: none;
+          }
+        }
       }
 
       &--social-items {
@@ -26,6 +40,18 @@
         padding: 1.5rem;
         color: $pri;
         font-size: 2rem;
+
+        @include respond(tab-land) {
+          padding: 1rem;
+        }
+
+        @include respond(phone) {
+          display: none;
+        }
+      }
+
+      @include respond(phone) {
+        justify-content: center;
       }
     }
 
@@ -41,6 +67,10 @@
         height: 100%;
         width: 10rem;
         color: $ter;
+
+        @include respond(phone) {
+          width: 100%;
+        }
 
         &:hover {
           color: white;

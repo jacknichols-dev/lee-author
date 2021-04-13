@@ -5,6 +5,7 @@
  
 }
 .banner {
+  position: relative;
     background-color: black;
     height: 85.5vh;
     display: flex;
@@ -31,6 +32,12 @@
         margin: 0 auto;
         width: 60%;
         animation: ImageAnimation 2s 0s ease-in-out backwards;
+
+        @include respond(tab-land) {
+          width: 30%;
+          margin: 1rem auto;
+          padding-top: 3rem;
+        }
       }
   
       &--desc {
@@ -43,7 +50,11 @@
         font-family: $f1;
         font-weight: ligher;
       }
-
+      @include respond(tab-land) {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
 
     }
 
@@ -52,7 +63,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      top: 60%;
+      top: 50%;
       transform: translateY(-50%);
       background: none;
       color: white;
@@ -80,6 +91,17 @@
         left: 50%;
         bottom: 10%;
       }
+    }
+
+    @include respond(tab-land) {
+      height: auto;
+    }
+  }
+
+  .left, .right {
+    @include respond(tab-land) {
+
+      width: 8rem;
     }
   }
 

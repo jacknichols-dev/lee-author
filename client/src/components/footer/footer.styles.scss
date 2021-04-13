@@ -9,10 +9,21 @@
             grid-template-columns: 1fr 1fr;
             column-gap: 10rem;
             padding: 10rem 0;
+
+            
+        @include respond(tab-land) {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
         }
 
         & h1 {
             margin: 5rem 0;
+
+                                                
+        @include respond(tab-land) {
+            margin: 2rem;
+        }
         }
 
         &--subscribe {
@@ -29,6 +40,8 @@
         &--contact {
             display: flex;
             flex-direction: column;
+
+
         }
 
         &--contact-container {
@@ -41,12 +54,19 @@
                 color: $pri;
                 font-family: $f1;
             }
+
+
         }
 
         &--agent {
             display: flex;
             align-items: center;
             padding: 1rem 0;
+
+                                                
+        @include respond(tab-land) {
+            display: block;
+        }
 
             & p {
                 padding: 0 1rem;
@@ -57,6 +77,11 @@
             display: flex;
             align-items: center;
             padding: 1rem 0;
+
+                                                
+        @include respond(tab-land) {
+            display: block;
+        }
 
             & p {
                 padding: 0 1rem;

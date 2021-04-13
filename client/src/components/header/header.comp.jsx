@@ -12,7 +12,7 @@ const header = () => {
                 <div className="header container">
                     <div className="header__main">
                         <Link to="/">
-                            <img src={Logo} alt="logo" height="50" />
+                            <img className="header__main--logo" src={Logo} alt="logo" height="50" />
                         </Link>
                         <div className="header__main--social-container">
 
