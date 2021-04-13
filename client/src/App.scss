@@ -4,6 +4,14 @@
   max-width: 85vw;
   margin: 0 auto;
   position: relative;
+
+  @include respond(tab-port) {
+    max-width: 90vw;
+  }
+
+  @include respond(phone) {
+    max-width: 95vw;
+  }
 }
 
 .footer-section {

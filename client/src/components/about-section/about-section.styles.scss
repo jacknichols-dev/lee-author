@@ -3,11 +3,43 @@
     background: linear-gradient(to top right, $sec 2%, $ter);
 
     &__content {
+        position: relative;
         display: flex;
         align-items: center;
         color: white;
+
+
+
+        @include respond(laptop) {
+            font-size: 1.85rem;
+            font-size: 1.4rem;
+            padding: 4rem 0;
+        }
+
+
+        @include respond(tab-port) {
+            font-size: 1.2rem;
+        }
+
+
     }
+
+    &__desc {
+        z-index: 99;
+    }
+
     &__img {
-        transform: translateY(6.5rem);
+        transform: translateY(2.9rem);
+        position: absolute;
+        bottom: 0;
+        right: 3rem;
+        width: 30%;
+        z-index: 1;
+
+
+        @include respond(laptop) {
+  
+        }
+       
     }
 }
