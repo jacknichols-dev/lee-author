@@ -4,16 +4,20 @@
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 2rem;
     margin: 10rem auto;
 }
 
 .card {
-    height: 100%;
-    width: 110%;
+    height: 65rem;
+    padding: 1rem;
+    width: 100%;
     cursor: pointer;
     transition: all .2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
 
     &:hover {
@@ -35,6 +39,9 @@
     &__footer {
         padding: 2rem;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
         &--top {
             display: flex;

@@ -13,10 +13,18 @@
 
     &__exit {
         position: absolute;
-        right: 2rem;
+        right: 1rem;
         top: 1rem;
+        width: 4rem;
+        height: 4rem;
         cursor: pointer;
         padding: 1rem;
+        border-radius: 50%;
+        transition: all .2s;
+
+        &:hover {
+            background-color: rgba($color: #000000, $alpha: 0.1);
+        }
     }
 
     &__title {

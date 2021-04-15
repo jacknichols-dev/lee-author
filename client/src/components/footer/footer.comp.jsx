@@ -12,7 +12,7 @@ const Footer = (props) => {
             <div className="footer container">
                 <div className="footer__content">
                     <div className="footer__content--container">
-                        <div className="footer__content--subscribe">
+                        <div className="footer__content--subscribe footer__content--item">
                             <h1>SUBSCRIBE</h1>
                             <div className="footer__content--sub-box">
                                 <p>I publish a newsletter once a month with behind the scenes info, updates and details of special offers and new releases. If you would be happy to hear from me please pop your email address in the box</p>
@@ -23,7 +23,7 @@ const Footer = (props) => {
                             </div>
                         </div>
 
-                        <div className="footer__content--contact">
+                        <div className="footer__content--contact footer__content--item">
                             <h1>CONTACT</h1>
                             <div className="footer__content--contact-container">
                                 <div className="footer__content--agent">
@@ -39,7 +39,7 @@ const Footer = (props) => {
                             </div>
                         </div>
 
-                        <div className="footer__content--navigate">
+                        <div className="footer__content--navigate footer__content--item">
                             <h1>NAVIGATE</h1>
                             <ul>
                                 <li>Home</li>
@@ -48,7 +48,7 @@ const Footer = (props) => {
                             </ul>
                         </div>
 
-                        <div className="footer__content--socials">
+                        <div className="footer__content--socials footer__content--item">
                             <h1>SOCIALS</h1>
                             <a target="_blank" href="https://www.facebook.com/" className="header__main--social-item">
                                 <FaIcons.FaFacebookF size="30" />
