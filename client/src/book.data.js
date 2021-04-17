@@ -3,7 +3,7 @@ export const BOOK_DATA = [
 
     {
         id: 1,
-        image: 'images/mr-lucky@2x.jpg',
+        image: '/images/mr-lucky@2x.jpg',
         title: 'Mr-Lucky',
         price: 6.99,
         author: 'Lee Wood',
@@ -16,7 +16,7 @@ export const BOOK_DATA = [
     },
     {
         id: 2,
-        image: 'images/lucky-break@2x.jpg',
+        image: '/images/lucky-break@2x.jpg',
         title: 'Lucky Break',
         price: 6.99,
         author: 'Lee Wood',
@@ -27,7 +27,7 @@ export const BOOK_DATA = [
     },
     {
         id: 3,
-        image: 'images/dead-lucky@2x.jpg',
+        image: '/images/dead-lucky@2x.jpg',
         title: 'Dead Lucky',
         price: 6.99,
         author: 'Lee Wood',
@@ -42,7 +42,7 @@ export const BOOK_DATA = [
     },
     {
         id: 4,
-        image: 'images/lucky-stars@2x.jpg',
+        image: '/images/lucky-stars@2x.jpg',
         title: 'Lucky Stars',
         price: 6.99,
         author: 'Lee Wood',
@@ -55,7 +55,7 @@ export const BOOK_DATA = [
     },
     {
         id: 5,
-        image: 'images/box-set@2x.jpg',
+        image: '/images/box-set@2x.jpg',
         title: 'Lucky Series',
         price: 12.99,
         author: 'Lee Wood',
