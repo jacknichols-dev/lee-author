@@ -32,7 +32,7 @@ const header = () => {
                         </div>
                     </div>
                 </div>
-                <nav className="header__nav" style={{ textAlign: 'center', height: '3.5vh' }}>
+                <nav className="header__nav">
                     <NavLink activeClassName="selected" className="header__nav--item" to="/" end>Home</NavLink>
                     <NavLink activeClassName="selected" className="header__nav--item" to="/about">About</NavLink>
                     <NavLink activeClassName="selected" className="header__nav--item" to="/books" end>Books</NavLink>

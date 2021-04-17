@@ -48,6 +48,7 @@
         align-items: center;
         justify-content: space-evenly;
         flex-wrap: wrap;
+        z-index: 99;
 
         @include respond(tab-land) {
             padding: 2rem;

@@ -19,16 +19,14 @@
 
         & h1 {
             margin: 5rem 0;
-
-                                                
-        @include respond(tab-land) {
-            margin: 2rem;
-        }
+                                    
+            @include respond(tab-land) {
+                margin: 2rem;
+            }
         }
 
         &--subscribe {
 
-            
         }
 
         &--sub-box {
@@ -54,7 +52,6 @@
                 color: $pri;
                 font-family: $f1;
             }
-
 
         }
 
@@ -98,7 +95,7 @@
         }
 
         &--item {
-            padding: 2rem 0;
+            padding: 2rem auto;
         }
     }
 

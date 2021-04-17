@@ -25,6 +25,7 @@
         align-items: center;
 
         & p {
+
           @include respond(tab-land) {
             display: none;
           }
@@ -44,21 +45,21 @@
         @include respond(tab-land) {
           padding: 1rem;
         }
-
-        @include respond(phone) {
-          display: none;
-        }
+        
       }
 
       @include respond(phone) {
-        justify-content: center;
+        padding: 0 3rem;
       }
+
     }
 
     &__nav {
       background-color: $light;
       display: flex;
       justify-content: center;
+      text-align: center;
+      height: 3.2rem;
 
       &--item {
         display: flex;

@@ -50,13 +50,13 @@ const Footer = (props) => {
 
                         <div className="footer__content--socials footer__content--item">
                             <h1>SOCIALS</h1>
-                            <a target="_blank" href="https://www.facebook.com/" className="header__main--social-item">
+                            <a target="_blank" href="https://www.facebook.com/" className="header__main--social-item footer__content--socials-item">
                                 <FaIcons.FaFacebookF size="30" />
                             </a>
-                            <a target="_blank" href="https://www.facebook.com/" className="header__main--social-item">
+                            <a target="_blank" href="https://www.facebook.com/" className="header__main--social-item footer__content--socials-item">
                                 <FaIcons.FaTwitter size="30" />
                             </a>
-                            <a target="_blank" href="https://www.facebook.com/" className="header__main--social-item">
+                            <a target="_blank" href="https://www.facebook.com/" className="header__main--social-item footer__content--socials-item">
                                 <FaIcons.FaLinkedinIn size="30" />
                             </a>
                         </div>

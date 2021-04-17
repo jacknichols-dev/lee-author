@@ -5,6 +5,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 
+    @include respond(tab-port) {
+        grid-template-columns: 1fr;
+    }
+
     &__left {
         display: flex;
         flex-direction: column;
@@ -83,6 +87,12 @@
             align-items: center;
             justify-content: space-evenly;
             padding: 3rem;
+
+            @include respond(tab-port) {
+                padding: 3rem 0;
+                font-size: 1.4rem;
+            }
+
         }
 
         &--item {
@@ -94,6 +104,10 @@
             & img {
                 padding-right: 1rem;
             }
+        }
+
+        @include respond(tab-land) {
+            padding: 0;
         }
     }
 }

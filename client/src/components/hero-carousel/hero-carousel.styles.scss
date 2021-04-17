@@ -7,7 +7,7 @@
 .banner {
   position: relative;
     background-color: black;
-    height: 85.5vh;
+    height: calc(90vh - 3.2rem);
     display: flex;
     min-width: 100vw;
     transition: all .5s ease-in-out;
