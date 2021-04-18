@@ -3,7 +3,7 @@ export const BOOK_DATA = [
 
     {
         id: 1,
-        image: '/images/mr-lucky@2x.jpg',
+        image: './images/mr-lucky@2x.jpg',
         title: 'Mr-Lucky',
         price: 6.99,
         author: 'Lee Wood',

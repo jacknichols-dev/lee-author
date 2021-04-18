@@ -28,7 +28,7 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname + '/client/build/index.html'));
 })
 
-const port = process.env.PORT || 9002;
+const port = process.env.PORT || 9001;
 app.listen(port);
 
 console.log(`Express listening on port ${port}`);

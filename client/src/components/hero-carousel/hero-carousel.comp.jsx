@@ -42,10 +42,6 @@ const HeroCarousel = () => {
                                             <Button link={`/books/${slide.title}`}>Read more</Button>
                                         </div>
                                     </div>
-
-
-
-
                                 </div>
                             </div>
                         )
