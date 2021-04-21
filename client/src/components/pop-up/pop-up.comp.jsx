@@ -6,7 +6,8 @@ import Form from '../Form/Form.comp';
 
 const PopUp = (props) => {
     return (props.trigger) ? (
-        <div className="pup">
+        <>
+            <div className="pup" onClick={() => props.closePup(false)}></div>
             <div className="pup-container">
                 <div className="pup__exit" onClick={() => props.closePup(false)}><AiIcons.AiOutlineCloseCircle size="20" /></div>
                 <h1 className="pup__title">Join My Newsletter</h1>
@@ -18,8 +19,10 @@ const PopUp = (props) => {
                 <Form />
             </div>
 
-        </div>
+
+        </>
     ) : '';
+
 }
 
 export default PopUp

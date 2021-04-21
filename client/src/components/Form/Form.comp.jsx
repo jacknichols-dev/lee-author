@@ -6,8 +6,7 @@ import Button from '../button/button.comp';
 export class Form extends Component {
 
     state = {
-        email: '',
-        name: ''
+        email: ''
     }
 
     handleSubmit = e => {
@@ -19,6 +18,10 @@ export class Form extends Component {
                 .then(res => console.log(res))
                 .catch(err => console.log(err))
         }
+
+        this.setState({
+            email: ''
+        })
     }
 
     handleEmailChange = e => {
