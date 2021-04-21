@@ -14,13 +14,16 @@ app.get("/api/memberAdd", (req, res) => {
     mailchimp
         .post(`/lists/${list_id}/members/`, {
             email_address: req.query.email,
-            status: "subscribed"
+            status: "subscribed",
+            merge_fields: {
+                FNAME: req.query.FNAME
+            }
         })
         .then(result => {
             res.send(result);
         })
         .catch(err => {
-            res.send(error);
+            res.send(err);
         })
 });
 

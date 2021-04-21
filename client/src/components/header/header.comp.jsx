@@ -11,7 +11,7 @@ const header = () => {
             <div className="header-pos">
                 <div className="header container">
                     <div className="header__main">
-                        <Link to="/">
+                        <Link to="/lee-author">
                             <img className="header__main--logo" src={Logo} alt="logo" height="50" />
                         </Link>
                         <div className="header__main--social-container">
@@ -33,7 +33,7 @@ const header = () => {
                     </div>
                 </div>
                 <nav className="header__nav">
-                    <NavLink activeClassName="selected" className="header__nav--item" to="/" end>Home</NavLink>
+                    <NavLink activeClassName="selected" className="header__nav--item" to="/lee-author" end>Home</NavLink>
                     <NavLink activeClassName="selected" className="header__nav--item" to="/about">About</NavLink>
                     <NavLink activeClassName="selected" className="header__nav--item" to="/books" end>Books</NavLink>
                 </nav>

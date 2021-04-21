@@ -1,8 +1,8 @@
 import React from 'react';
 import './pop-up.styles.scss';
-import Input from '../input/input.comp';
-import Button from '../button/button.comp';
+
 import * as AiIcons from 'react-icons/ai';
+import Form from '../Form/Form.comp';
 
 const PopUp = (props) => {
     return (props.trigger) ? (
@@ -15,15 +15,7 @@ const PopUp = (props) => {
                     updates and details of special offers and new releases.
                     If you would be happy to hear from me please pop your email address in the box.
                 </p>
-                <form action="/subscribe" method="POST">
-
-                    <Input type="name" id="name" placeholder="Enter your name" />
-                    <Input type="email" id="email" placeholder="Enter your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
-
-                    <Button type="submit" id="cta">Subscribe</Button>
-
-                </form>
-
+                <Form />
             </div>
 
         </div>

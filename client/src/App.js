@@ -19,7 +19,7 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setTimedPup(true)
-    }, 10000);
+    }, 2000);
   }, []);
 
   const [timedPup, setTimedPup] = useState(false);
@@ -34,7 +34,7 @@ const App = () => {
         <Router>
           <Header />
           <Routes>
-            <Route path="/" element={<HomePage />} preload={scrollTop} />
+            <Route path="/lee-author" element={<HomePage />} preload={scrollTop} />
             <Route path="/about" element={<AboutPage />} preload={scrollTop} />
             <Route path="/books" element={<BookPage />} preload={scrollTop} />
             <Route path="/books/:title" element={<ProductPage />} preload={scrollTop} />

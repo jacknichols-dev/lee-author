@@ -3,8 +3,9 @@ import Button from '../button/button.comp'
 import * as FiIcons from 'react-icons/fi';
 import * as BiIcons from 'react-icons/bi';
 import * as FaIcons from 'react-icons/fa';
-import Input from '../input/input.comp';
+
 import './footer.styles.scss';
+import Form from '../Form/Form.comp';
 
 const Footer = (props) => {
     return (
@@ -16,10 +17,7 @@ const Footer = (props) => {
                             <h1>SUBSCRIBE</h1>
                             <div className="footer__content--sub-box">
                                 <p>I publish a newsletter once a month with behind the scenes info, updates and details of special offers and new releases. If you would be happy to hear from me please pop your email address in the box</p>
-                                <form action="submit">
-                                    <Input placeholder="Enter your email" />
-                                    <Button>Subscribe</Button>
-                                </form>
+                                <Form />
                             </div>
                         </div>
 
