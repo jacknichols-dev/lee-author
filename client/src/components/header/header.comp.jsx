@@ -19,13 +19,13 @@ const header = () => {
                             <p>Follow me on</p>
 
                             <div className="header__main--social-items">
-                                <a target="_blank" href="https://www.facebook.com/" className="header__main--social-item">
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/" className="header__main--social-item">
                                     <FaIcons.FaFacebookF />
                                 </a>
-                                <a target="_blank" href="https://www.facebook.com/" className="header__main--social-item">
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/" className="header__main--social-item">
                                     <FaIcons.FaTwitter />
                                 </a>
-                                <a target="_blank" href="https://www.facebook.com/" className="header__main--social-item">
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/" className="header__main--social-item">
                                     <FaIcons.FaLinkedinIn />
                                 </a>
                             </div>

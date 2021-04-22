@@ -41,6 +41,11 @@
         padding: 1.5rem;
         color: $pri;
         font-size: 2rem;
+        transition: all .2s;
+
+        &:hover {
+          color: darken($pri, 15%);
+        }
 
         @include respond(tab-land) {
           padding: 1rem;

@@ -5,22 +5,14 @@
     & h1 {
         color: $pri;
 
-        @include respond(tab-land) {
+        @include respond(laptop) {
             text-align: center;
             font-size: 3.5rem;
         }
     }
 
     &__container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin: 0 auto;
-        align-items: center;
-
-        @include respond(tab-land) {
-            display: flex;
-            flex-direction: column;
-        }
+        display: flex;
 
         & h4 {
             color: $pri;
@@ -28,18 +20,33 @@
     }
 
     &__testimonial {
-        padding: 10rem 5rem;
+        padding: 5rem;
         text-align: center;
 
+        & p {
+            padding: 6rem;
 
-
-
-        @include respond(laptop) {
-            padding: 3rem 3rem;
-        }
-
-        @include respond(tab-land) {
-            padding: 3rem 1rem;
+            @include respond(tab-port) {
+                padding: 0;
+            }
         }
     }
+}
+
+.swiper-button-next, .swiper-button-prev {
+
+    &::after {
+        color: $pri;
+        font-size: 2rem !important;    }
+
+        @include respond(phone) {
+            display: none !important;
+        }
+}
+
+.swiper-pagination-bullet {
+    width: 5rem !important;
+    height: .5rem !important;
+    border-radius: 0 !important;
+    background-color: $pri !important;
 }

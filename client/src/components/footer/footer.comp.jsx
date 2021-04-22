@@ -1,5 +1,4 @@
 import React from 'react'
-import Button from '../button/button.comp'
 import * as FiIcons from 'react-icons/fi';
 import * as BiIcons from 'react-icons/bi';
 import * as FaIcons from 'react-icons/fa';
@@ -7,8 +6,15 @@ import * as FaIcons from 'react-icons/fa';
 import './footer.styles.scss';
 import Form from '../Form/Form.comp';
 
+
+
 const Footer = (props) => {
+
+    const today = new Date();
+
     return (
+
+
         <>
             <div className="footer container">
                 <div className="footer__content">
@@ -66,7 +72,7 @@ const Footer = (props) => {
             <div className="footer__bottom">
                 <div className="container">
 
-                    <p>© Lee Wood 2020 - all rights reserved</p>
+                    <p>© Lee Wood {today.getFullYear()} - all rights reserved</p>
                 </div>
             </div>
         </>
