@@ -10,6 +10,7 @@ import BookPage from './pages/bookspage/bookspage.comp';
 import Footer from "./components/footer/footer.comp";
 import ProductPage from "./pages/productpage/productpage.comp";
 import PopUp from './components/pop-up/pop-up.comp';
+import ScrollToTop from './components/ScrollToTop.comp';
 
 const App = () => {
 
@@ -31,6 +32,7 @@ const App = () => {
     <DataProvider >
       <div>
         <Router>
+          <ScrollToTop />
           <Header />
           <Routes>
             <Route path="/lee-author" element={<HomePage />} preload={scrollTop} />

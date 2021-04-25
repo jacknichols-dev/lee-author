@@ -71,5 +71,21 @@
 
     &__item-container {
         width: 20rem;
+
+        &--item {
+            margin: 4rem 0;
+        }
     }
 }
+
+.swiper-slide, .swiper-slide-active, .swiper-slide-next {
+
+    @include respond(tab-land) {
+        width: 100% !important;
+    }
+}
+
+
+
+
+  

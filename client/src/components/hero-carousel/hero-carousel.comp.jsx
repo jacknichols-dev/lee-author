@@ -3,6 +3,11 @@ import './hero-carousel.styles.scss';
 import SLIDE_DATA from './slide-data';
 import Button from '../button/button.comp';
 import * as RiIcons from 'react-icons/ri';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper';
+import 'swiper/swiper-bundle.css';
+
+SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 
 const HeroCarousel = () => {
@@ -23,30 +28,44 @@ const HeroCarousel = () => {
     return (
         <>
             <div className="banner-container">
+                <Swiper
+                    spaceBetween={0}
+                    slidesPerView={1}
+                    onSlideChange={() => console.log('slide change')}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    navigation
+                    pagination
+                    autoplay={{ delay: 4000 }}
+                >
 
-                {
-                    sliderArr.map((slide, index) => {
-                        return (
-                            <div className="banner" key={index} style={{ transform: `translateX(${x}%` }}>
 
-                                <div style={{ backgroundImage: `url(${slide.bgImage})` }} className="banner__content--bg">
-                                    <div className="banner__content container">
-                                        <img src={slide.image} alt={slide.title} className="banner__content--image" />
-                                        <div className="banner__content--desc">
-                                            <h1>{slide.title}</h1>
-                                            <h4 style={{ fontWeight: 'lighter' }}>{slide.author}</h4>
-                                            <br />
-                                            <p>
-                                                {slide.synopsis}
-                                            </p>
-                                            <Button link={`/books/${slide.title}`}>Read more</Button>
+                    {
+                        sliderArr.map((slide, index) => {
+                            return (
+                                <SwiperSlide>
+                                    <div className="banner" key={index} style={{ transform: `translateX(${x}%` }}>
+
+                                        <div style={{ backgroundImage: `url(${slide.bgImage})` }} className="banner__content--bg">
+                                            <div className="banner__content container">
+                                                <img src={slide.image} alt={slide.title} className="banner__content--image" />
+                                                <div className="banner__content--desc">
+                                                    <h1>{slide.title}</h1>
+                                                    <h4 style={{ fontWeight: 'lighter' }}>{slide.author}</h4>
+                                                    <br />
+                                                    <p>
+                                                        {slide.synopsis}
+                                                    </p>
+                                                    <Button link={`/books/${slide.title}`}>Read more</Button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        )
-                    })
-                }
+                                </SwiperSlide>
+                            )
+                        })
+                    }
+
+                </Swiper>
                 < button className="banner__btn left" onClick={goLeft}><RiIcons.RiArrowLeftCircleLine /></button>
                 <button className="banner__btn right" onClick={goRight}><RiIcons.RiArrowRightCircleLine /></button>
 

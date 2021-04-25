@@ -15,7 +15,7 @@
 }
 
 .footer-section {
-  background: linear-gradient($sec, darken($sec, 15%));
+  background: linear-gradient(to bottom, $sec 20%, darken($sec, 15%) 80%);
   color: white;
 }
 

@@ -3,18 +3,18 @@ import './latest-releases.styles.scss';
 import { DataContext } from '../Data/DataProvider';
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
-
-import mrLucky from '../../assets/mr-lucky-book@2x.png';
-import LuckyBreak from '../../assets/lucky-break-book@2x.png';
-import DeadLucky from '../../assets/dead-lucky-book@2x.png';
-import LuckyStars from '../../assets/lucky-stars-book@2x.png';
-import Boxset from '../../assets/box-set@2x.png';
 import Button from '../button/button.comp';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper';
+import 'swiper/swiper-bundle.css';
+
+SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 const LatestReleases = () => {
     const [books, setBooks] = useContext(DataContext)
     return (
         <div className="latest container">
+
             <ScrollAnimation animateIn="animate__fadeInUp" duration="1" animateOnce >
                 <div className="latest__left-container">
                     <h1>LATEST RELEASES</h1>
@@ -28,44 +28,45 @@ const LatestReleases = () => {
 
 
             <div className="latest__items-container">
+                <Swiper
+                    spaceBetween={0}
+                    slidesPerView={1}
+                    onSlideChange={() => console.log('slide change')}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    navigation
+                    pagination
+                    autoplay={{ delay: 4000 }}
+                    breakpoints={{
+                        // when window width is >= 640px
+                        640: {
+                            width: 600,
+                            slidesPerView: 1,
+                        },
+                        // when window width is >= 768px
+                        768: {
+                            width: 768,
+                            slidesPerView: 3,
+                        },
+                    }}
+                >
 
-                {
-                    books.map((book, index) => (
-                        <div className="latest__item-container">
-                            <div className="latest__item-container--item">
-                                <ScrollAnimation animateIn="animate__fadeInUp" duration=".8" animateOnce >
-                                    <img src={book.image} alt="Mr. Lucky" className="latest__item-container--img" />
-                                    <Button link="/books/1">Read more</Button>
-                                </ScrollAnimation>
+                    {
+                        books.map((book, index) => (
+                            <div className="latest__item-container">
+                                <SwiperSlide>
+                                    <div className="latest__item-container--item">
+                                        <ScrollAnimation animateIn="animate__fadeInUp" duration=".8" animateOnce >
+                                            <img src={book.image} alt="Mr. Lucky" className="latest__item-container--img" />
+                                            <Button link="/books/1">Read more</Button>
+                                        </ScrollAnimation>
+                                    </div>
+                                </SwiperSlide>
                             </div>
-                        </div>
-                    ))
-                }
+                        ))
+                    }
 
-                {/* <div className="latest__item-container">
-                    <ScrollAnimation animateIn="animate__fadeInUp" duration=".3" animateOnce >
-                        <img src={LuckyBreak} alt="Lucky Break" />
-                        <Button link="/books/2">Read more</Button>
-                    </ScrollAnimation>
-                </div>
-                <div className="latest__item-container">
-                    <ScrollAnimation animateIn="animate__fadeInUp" duration=".4" animateOnce >
-                        <img src={DeadLucky} alt="Dead Lucky" />
-                        <Button link="/books/3">Read more</Button>
-                    </ScrollAnimation>
-                </div>
-                <div className="latest__item-container">
-                    <ScrollAnimation animateIn="animate__fadeInUp" duration=".5" animateOnce >
-                        <img src={LuckyStars} alt="Lucky Stars" />
-                        <Button link="/books/4">Read more</Button>
-                    </ScrollAnimation>
-                </div>
-                <div className="latest__item-container">
-                    <ScrollAnimation animateIn="animate__fadeInUp" duration=".6" animateOnce >
-                        <img src={Boxset} alt="Box set" />
-                        <Button link="/books/5">Read more</Button>
-                    </ScrollAnimation>
-                </div> */}
+                </Swiper>
+
             </div>
 
 

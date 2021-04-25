@@ -63,6 +63,7 @@
     box-shadow: 0 2rem 5rem rgba(0,0,0,.2);
     background-color: white;
     position: fixed;
+    text-align: center;
 
     @include respond(tab-land) {
         width: 80%;

@@ -96,13 +96,15 @@
 
         &--item {
             padding: 2rem auto;
+            text-align: center;
         }
     }
 
     &__bottom {
-        background-color: $ter;
+        background-color: $light;
         padding: 1.5rem 0;
-        text-align: center;
+        text-align: left;
+        color: $pri;
         font-weight: lighter;
         font-size: 1.3rem;
     }
