@@ -19,7 +19,7 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setTimedPup(true)
-    }, 2000);
+    }, 5000);
   }, []);
 
   const [timedPup, setTimedPup] = useState(false);

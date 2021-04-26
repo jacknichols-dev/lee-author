@@ -51,6 +51,12 @@
             & h4 a {
                 color: $pri;
                 font-family: $f1;
+
+                transition: all .2s;
+
+                &:hover {
+                    color: lighten($pri, 15%);
+                }
             }
 
         }
@@ -86,12 +92,20 @@
         }
 
         &--navigate {
-            & ul {
+            & ul, li {
                 color: $pri;
                 font-family: $f2;
                 list-style: none;
                 font-size: 3rem;
+                transition: all .2s;
+
+                    &:hover {
+                        color: lighten($pri, 15%);
+                    }
+
             }
+
+           
         }
 
         &--item {
@@ -101,10 +115,10 @@
     }
 
     &__bottom {
-        background-color: $light;
-        padding: 1.5rem 0;
-        text-align: left;
-        color: $pri;
+        background-color: $ter;
+        padding: 3rem 0;
+        text-align: center;
+        color: $light;
         font-weight: lighter;
         font-size: 1.3rem;
     }

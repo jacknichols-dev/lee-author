@@ -47,10 +47,16 @@ export default function ProductPage() {
                                             <h1>£{book.price}</h1>
                                         </div>
                                     </div>
-
-                                    <Button className="btn-center" link={
-                                        book.link
-                                    } target="_blank" >Buy at Amazon<FaIcons.FaAmazon size="30" style={{ marginLeft: '1.5rem' }} /></Button>
+                                    <a href={book.link} rel="noopener" target="_blank">
+                                        <Button className="btn-center"
+                                            link={book.link} target="_blank">
+                                            Buy at Amazon
+                                        <FaIcons.FaAmazon
+                                                size="30"
+                                                style={{ marginLeft: '1.5rem' }}
+                                            />
+                                        </Button>
+                                    </a>
 
                                     <div className="book__desc--availability">
                                         Available in:

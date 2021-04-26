@@ -44,7 +44,7 @@
         transition: all .2s;
 
         &:hover {
-          color: darken($pri, 15%);
+          color: lighten($pri, 15%);
         }
 
         @include respond(tab-land) {

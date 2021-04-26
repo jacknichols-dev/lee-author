@@ -4,6 +4,8 @@ import { DataContext } from '../Data/DataProvider';
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
 import Button from '../button/button.comp';
+import { Link } from 'react-router-dom';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper';
 import 'swiper/swiper-bundle.css';
@@ -56,8 +58,12 @@ const LatestReleases = () => {
                                 <SwiperSlide>
                                     <div className="latest__item-container--item">
                                         <ScrollAnimation animateIn="animate__fadeInUp" duration=".8" animateOnce >
-                                            <img src={book.image} alt="Mr. Lucky" className="latest__item-container--img" />
-                                            <Button link="/books/1">Read more</Button>
+                                            <img src={book.image} alt={book.title} className="latest__item-container--img" />
+
+                                            <Link to={`/books/${book.title}`}>
+                                                <Button>Read more</Button>
+                                            </Link>
+
                                         </ScrollAnimation>
                                     </div>
                                 </SwiperSlide>

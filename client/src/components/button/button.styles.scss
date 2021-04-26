@@ -17,7 +17,7 @@
     cursor: pointer;
 
     &:hover {
-        background-color: darken(#0095E0, 10);
+        background-color: lighten(#0095E0, 10);
         transition: all .2s ease-in-out;
     }
 }

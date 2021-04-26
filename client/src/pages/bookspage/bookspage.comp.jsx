@@ -29,7 +29,8 @@ export default function BooksPage() {
                                         {
                                             book.synopsis.split(' ').slice(0, 24).join(' ') + '...'
                                         }
-                                        <p style={{ color: '#0095E0' }}>read more</p>
+
+                                        <p style={{ color: '#0095E0', paddingTop: "1rem" }}>read more</p>
 
                                     </div>
                                 </div>

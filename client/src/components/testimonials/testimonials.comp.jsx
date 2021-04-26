@@ -19,7 +19,7 @@ const Testimonials = () => {
                     onSwiper={(swiper) => console.log(swiper)}
                     navigation
                     pagination
-                    autoplay={{ delay: 4000 }}
+                    autoplay={{ delay: 12000 }}
                 >
                     <SwiperSlide>
                         <div className="testimonials__testimonial">

@@ -6,6 +6,8 @@ import * as RiIcons from 'react-icons/ri';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper';
 import 'swiper/swiper-bundle.css';
+import { Link } from 'react-router-dom';
+
 
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
@@ -35,7 +37,7 @@ const HeroCarousel = () => {
                     onSwiper={(swiper) => console.log(swiper)}
                     navigation
                     pagination
-                    autoplay={{ delay: 4000 }}
+                    autoplay={{ delay: 12000 }}
                 >
 
 
@@ -55,7 +57,9 @@ const HeroCarousel = () => {
                                                     <p>
                                                         {slide.synopsis}
                                                     </p>
-                                                    <Button link={`/books/${slide.title}`}>Read more</Button>
+                                                    <Link to={`/books/${slide.title}`} >
+                                                        <Button>Read more</Button>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>

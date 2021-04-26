@@ -1,8 +1,8 @@
 import React from 'react'
+import { Link, NavLink } from 'react-router-dom';
 import * as FiIcons from 'react-icons/fi';
 import * as BiIcons from 'react-icons/bi';
 import * as FaIcons from 'react-icons/fa';
-
 import './footer.styles.scss';
 import Form from '../Form/Form.comp';
 
@@ -22,7 +22,6 @@ const Footer = (props) => {
                         <div className="footer__content--subscribe footer__content--item">
                             <h1>SUBSCRIBE</h1>
                             <div className="footer__content--sub-box">
-                                <p>I publish a newsletter once a month with behind the scenes info, updates and details of special offers and new releases. If you would be happy to hear from me please pop your email address in the box</p>
                                 <Form />
                             </div>
                         </div>
@@ -46,9 +45,21 @@ const Footer = (props) => {
                         <div className="footer__content--navigate footer__content--item">
                             <h1>NAVIGATE</h1>
                             <ul>
-                                <li>Home</li>
-                                <li>About</li>
-                                <li>Books</li>
+                                <Link to="/lee-author">
+                                    <li>
+                                        Home
+                                    </li>
+                                </Link>
+                                <Link to="/about">
+                                    <li>
+                                        About
+                                    </li>
+                                </Link>
+                                <Link to="/books">
+                                    <li>
+                                        Books
+                                    </li>
+                                </Link>
                             </ul>
                         </div>
 
